@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header/Header";
 import KUTE from "kute.js";
 import selfie from "./assets/jerry.jpeg"
 
@@ -49,6 +50,7 @@ const Home = () => {
     return (
         <>
             <section className="hidden">
+            <Header />
                 <div className="index-container">
                     <p className="darkpink orbitron minimal-margin">Hello, my name is</p>
                     <h1 className="minimal-margin">Sandor Szabo</h1>
@@ -132,17 +134,18 @@ const Home = () => {
                 </svg> */}
             </section>
 
-            <section className="hidden">
-                <div className="projects-container"></div>
+            <section className="hidden projects-section">
+                <div className="projects-title-container">
                 <h3 className="projects-title"><span className="darkpink orbitron marginright">1.</span>Some things I've built</h3>
+                </div>
                 <div className="first-project">
-                    <div className="kicks-img-container"></div>
-                    <div className="kicks-description"></div>
+                    <div className="kicks-img-container">1</div>
+                    <div className="kicks-description">2</div>
                 </div>
                 <div className="second-project">
-                    <div className="fit-img-left-container"></div>
-                    <div className="fit-description"></div>
-                    <div className="fit-img-right-container"></div>
+                    <div className="fit-img-left-container">3</div>
+                    <div className="fit-description">4</div>
+                    <div className="fit-img-right-container">5</div>
                 </div>
             </section>
 
