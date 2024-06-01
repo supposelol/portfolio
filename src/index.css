@@ -352,9 +352,9 @@ ul li::before {
 .fit-img {
     display: flex;
     flex: 1 1 100%;
-    max-width: 66%;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    max-width: 56%;
+    border-radius: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.19);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
