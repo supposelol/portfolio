@@ -1,0 +1,69 @@
+/* .second-projects-title-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-projects-title {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 0px 36px;
+} */
+
+.third-project-section {
+    align-content: center;
+}
+
+.third-project-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    padding: 20px 20px 36px;
+}
+
+.fit-card-container {
+    display: grid;
+    grid-area: 1 / 5 / 2 / 11;
+}
+
+.third-project-description-container {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+.fit-card-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fit-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width: 240px;
+    min-width: 130px;
+    height: auto;
+    padding: 1.5rem;
+    transition: .3s;
+    margin-right: -7rem;
+}
+
+.fit-card:hover {
+    transform: translateY(-1rem) scale(1.12);
+    z-index: 1;
+}
+
+.fit-card:hover~.fit-card {
+    transform: translateX(7rem);
+
+}
+
+.fitness-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.6);
+}
+
+.fit-title {
+    margin-left: 2px;
+}
