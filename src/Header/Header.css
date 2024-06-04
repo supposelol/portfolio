@@ -55,17 +55,17 @@ header p {
 .nav-text::after {
     content: '';
     width: 24px;
-    height: 12px;
+    height: 20px;
     background-color: #cc0066;
-    margin-left: 4px;
     opacity: 0;
-    transform: translateX(12px);
+    transform: translateX(8px);
     transition: opacity 0.3s, transform 0.3s;
+    z-index: -1;
 }
 
 .nav-text:hover::after {
     opacity: .5;
-    transform: translateX(0);
+    transform: translateX(-8px);
 }
 
 .marginright {

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -17,13 +13,11 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-
-    scroll-behavior: smooth;
 }
 
 section {
     height: 100vh;
-    padding: 0 5vw;
+    padding: 0 7vw;
     scroll-snap-align: start;
 }
 
@@ -135,8 +129,8 @@ h2 {
 
 .index-container {
     max-width: 30%;
-    margin-left: 200px;
-    padding-top: 100px;
+    margin-left: 15vw;
+    padding-top: 10vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -161,6 +155,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    
 }
 
 .about-container {
