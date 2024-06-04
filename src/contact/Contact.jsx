@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
     return (
-        <section id="section5" className="contact-section">
+        <>
             <div className="projects-title-container">
                 <h3 className="projects-title"><span className="darkpink orbitron marginright">3.</span>Get in touch</h3>
             </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                     <p>szabo.shani@gmail.com</p>
                 </div>
             </div>
-        </section>
+        </>
     );
 };
 

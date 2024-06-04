@@ -6,19 +6,25 @@ body {
     margin: 0;
     color: white;
     background: #202731;
-    overflow-x: hidden;
 }
 
 .section-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     height: 100vh;
 }
 
 section {
     height: 100vh;
     padding: 0 7vw;
-    scroll-snap-align: start;
+}
+
+section:focus {
+    outline: none;
+}
+
+@media (min-resolution: 192dpi) {
+    section {
+        height: 100dvh;
+    }
 }
 
 .eiderwhite {
@@ -95,7 +101,7 @@ h4 {
 } */
 
 
-.hidden {
+/* .hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
@@ -106,13 +112,13 @@ h4 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-}
-
+} 
+/* 
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
-}
+} */
 
 
 /* end of base styles */
@@ -155,7 +161,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    
+
 }
 
 .about-container {

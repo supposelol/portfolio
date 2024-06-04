@@ -7,7 +7,7 @@ import fit4 from "../assets/fit4.png";
 
 const SecondProject = () => {
     return (
-        <section id="section4" className="hidden third-project-section">
+        <>
             {/* PUT A SEPERATOR HERE MAYBE */}
             {/* <div className="projects-title-container">
                     <h3 className="projects-title"></h3>
@@ -59,7 +59,7 @@ const SecondProject = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </>
     );
 };
 

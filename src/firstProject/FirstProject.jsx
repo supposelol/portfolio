@@ -4,7 +4,7 @@ import kicks from "../assets/kicks.png";
 const FirstProject = () => {
 
     return (
-        <section id="section3" className="hidden projects-section">
+        <>
             <div className="projects-title-container">
                 <h3 className="projects-title"><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
             </div>
@@ -48,7 +48,7 @@ const FirstProject = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </>
     )
 }
 
