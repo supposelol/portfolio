@@ -74,7 +74,7 @@ const Home = () => {
                 <section id="section5" tabIndex="-1" className="hidden contact-section">
                     <Contact />
                 </section>
-            </div >
+            </div>
         </>
     );
 };
