@@ -1,18 +1,3 @@
-h3 {
-    font-size: 32px;
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-}
-
-h3::after {
-    margin-left: 24px;
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    background-color: #b3005c;
-}
-
 .about-section {
     display: flex;
     flex-direction: column;

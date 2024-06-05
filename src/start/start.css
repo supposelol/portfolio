@@ -11,10 +11,19 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    max-width: 70%;
-    gap: 18rem;
+    gap:15rem;
+    max-width: 50%;
     word-wrap: break-word;
+    margin-top: -10%;
 }
+
+.text-container {
+    width: 45%;
+    margin-right: auto;
+}
+/* .index-container:first-child {
+    margin-left: auto;
+} */
 
 /* h1 h2 don't break */
 .index-container h1,
@@ -59,8 +68,14 @@
     }
 
     .index-container {
-        max-width: 70% !important;
-        gap: 6rem;
+        max-width: 50% !important;
+        gap: 10rem;
+        margin-top: 0;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-right: auto;
     }
 
     h1 {
@@ -75,13 +90,18 @@
 @media (max-width: 992px) {
     .index-container {
         flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
     }
 
     .index-container {
-        max-width: 40% !important;
+        max-width: 80% !important;
         gap: 4.5rem;
     }
-
+    .text-container {
+        width: 50%;
+        margin-right: auto;
+    }
     h1 {
         font-size: 36px !important;
     }
@@ -92,6 +112,22 @@
 }
 
 @media (max-width: 768px) {
+    .text-container {
+        width: 70%;
+    }
+    h1 {
+        font-size: 34px !important;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-container {
+        width: 100%;
+    }
     h1 {
         font-size: 34px !important;
     }

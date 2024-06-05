@@ -1,7 +1,11 @@
+import React from "react";
 import "./start.css";
-import selfie from "../assets/jerry.jpeg"
+import selfie from "../assets/jerry.jpeg";
+import useResize from "../components/useResize";
 
 const Start = () => {
+    const { isMediumOrSmaller, isMediumOrLarger } = useResize();
+
     return (
         <>
             <div className="index-container">
@@ -16,12 +20,14 @@ const Start = () => {
                         I have a knack for finding solutions and turning ideas into reality.
                     </p>
                 </div>
-                <div className="card">
-                    <img src={selfie} alt="Selfie pic" id="selfie"></img>
-                </div>
+                {isMediumOrSmaller && (
+                    <div className="card">
+                        <img src={selfie} alt="Selfie pic" id="selfie"></img>
+                    </div>
+                )}
             </div>
         </>
     );
 };
 
-export default Start
+export default Start;

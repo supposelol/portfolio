@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.css";
+import useResize from "../components/useResize";
+import selfie from "../assets/jerry.jpeg"
 
 const About = () => {
+    const { isMediumOrSmaller, isMediumOrLarger } = useResize();
+
     return (
         <>
             <div className="title-container">
@@ -38,6 +42,11 @@ const About = () => {
                     </ul>
                 </div>
             </div>
+            {isMediumOrLarger && (
+                    <div className="card">
+                        <img src={selfie} alt="Selfie pic" id="selfie"></img>
+                    </div>
+                )}
         </>
     );
 };
