@@ -5,6 +5,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 80px;
+    width: 100% !important;
 }
 
 header p {
@@ -17,7 +18,7 @@ header p {
 }
 
 #logo {
-    height: 70px;
+    height: 80px;
     width: auto;
 }
 
@@ -70,6 +71,23 @@ header p {
 .marginright {
     margin-right: 8px;
     margin-left: 8px;
+}
+
+/* Hide the menu icon by default */
+.hamburger-container {
+    display: none;
+}
+
+/* Show the menu icon and hide nav-links on smaller screens */
+@media (max-width: 768px) {
+    .hamburger-container {
+        display: block;
+    }
+
+    .nav-links,
+    .button {
+        display: none;
+    }
 }
 
 /* resume button */

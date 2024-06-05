@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import "./Header.css";
+import logo from "../assets/Sandor_transparent.png";
+import "./header.css";
+import "./hamburger.css"
 
 const Header = ({ goToSection }) => {
     const handleClick = (sectionId) => {
@@ -24,6 +25,15 @@ const Header = ({ goToSection }) => {
                 <button className="button">
                     <p>Resume</p>
                 </button>
+            </div>
+            <div className="hamburger-container">
+                <div class="background">
+                    <button class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </header>
     );

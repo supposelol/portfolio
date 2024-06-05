@@ -4,8 +4,8 @@ import "./contact.css";
 const Contact = () => {
     return (
         <>
-            <div className="projects-title-container">
-                <h3 className="projects-title"><span className="darkpink orbitron marginright">3.</span>Get in touch</h3>
+            <div className="title-container">
+                <h3><span className="darkpink orbitron marginright">3.</span>Get in touch</h3>
             </div>
             <div className="contact-container">
                 <div className="contact-text">

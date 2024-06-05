@@ -5,8 +5,8 @@ const FirstProject = () => {
 
     return (
         <>
-            <div className="projects-title-container">
-                <h3 className="projects-title"><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
+            <div className="title-container">
+                <h3><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
             </div>
             <div className="first-project">
                 <div className="kicks-img-container">
