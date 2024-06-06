@@ -110,6 +110,11 @@ h4 {
 }
 
 
+.contacts-link {
+    text-decoration: none;
+}
+
+/* 
 .spacer {
     aspect-ratio: 960/540;
     width: 100%;
@@ -125,7 +130,7 @@ h4 {
 .layer2 {
     background-image: url('./assets/layer2.svg')
 } 
-
+        
  .flip {
     transform: rotate(180deg);
 }
