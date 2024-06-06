@@ -67,3 +67,11 @@
 .fit-title {
     margin-left: 2px;
 }
+
+@media (max-width: 992px) {
+
+    /* delete this */
+    .third-project-container {
+        display: none;
+    }
+}
