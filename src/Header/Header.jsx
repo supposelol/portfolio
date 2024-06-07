@@ -46,6 +46,15 @@ const Header = ({ goToSection }) => {
         }
     }, [isAnimating]);
 
+    useEffect(() => {
+        const body = document.querySelector('body');
+        if (openMenu) {
+            body.classList.add('no-scroll');
+        } else {
+            body.classList.remove('no-scroll');
+        }
+    }, [openMenu]);
+
     const handleMenuClick = () => {
         if (openMenu) {
             setIsAnimating(true);
@@ -76,7 +85,7 @@ const Header = ({ goToSection }) => {
 
             <div className={`hamburger-container ${openMenu ? 'open' : ''}`}
                 onClick={handleMenuClick}
-                >
+            >
                 <button className={`menu__icon ${isMenuIconActive ? 'active' : ''}`}>
                     <span></span>
                     <span></span>
@@ -86,7 +95,7 @@ const Header = ({ goToSection }) => {
 
             {(openMenu || isAnimating) && (
                 <animated.ul className="mobile-menu"
-                 style={openMenuAnimation}>
+                    style={openMenuAnimation}>
                     <div className="mobile-nav-links">
                         <div className="nav-item" onClick={() => handleClick('section2')}>
                             <p className="darkpink">1.</p><p className="eiderwhite nav-text">About</p>

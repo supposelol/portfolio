@@ -1,5 +1,7 @@
+import "./firstProject.css";
 import "./svgButtons.css";
 import kicks from "../assets/kicks.png";
+import kickstwo from "../assets/kickstwo.png";
 
 const FirstProject = () => {
 
