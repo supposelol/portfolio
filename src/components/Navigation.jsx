@@ -34,7 +34,6 @@ const StyledNavigation = styled.nav`
       display: none !important;
       content: none !important;
     }
-    
   }
 
   & > ul > li > button {
@@ -88,7 +87,6 @@ const StyledNavigation = styled.nav`
         height: 0.65em !important;
       }
     }
-    
   }
 
   @media (max-height: 600px) {
@@ -97,6 +95,10 @@ const StyledNavigation = styled.nav`
     & > ul {
       gap: 0.5em !important;
     }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 

@@ -21,10 +21,9 @@
     width: 45%;
     margin-right: auto;
 }
-/* .index-container:first-child {
-    margin-left: auto;
-} */
-
+.text-container p:first-of-type {
+    margin-left: 0.25rem;
+}
 /* h1 h2 don't break */
 .index-container h1,
 .index-container h2 {
@@ -36,7 +35,8 @@
 }
 
 .card {
-    grid-column: 2 / 3;
+    display: flex;
+    margin-bottom: 4rem;
     align-self: center;
     width: 250px;
     height: 250px;
@@ -49,7 +49,6 @@
 
 .card:hover {
     box-shadow: -12px 12px 2px -1px rgba(166, 0, 83, 0.8);
-    ;
 }
 
 #selfie {
@@ -112,6 +111,9 @@
 }
 
 @media (max-width: 768px) {
+    .card{
+        margin-bottom: 0;
+    }
     .text-container {
         width: 70%;
     }

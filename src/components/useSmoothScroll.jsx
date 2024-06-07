@@ -3,13 +3,13 @@ import { debounce } from 'lodash';
 
 const useSmoothScroll = () => {
     const [currentSection, setCurrentSection] = useState('section1');
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
-    const smoothScroll = (targetY, duration = 1000) => {
+    const smoothScroll = (targetY, duration = 600) => {
         const startY = window.pageYOffset;
         const distance = targetY - startY;
         const startTime = performance.now();
 
-        // easing function 
         const easeInOutQuint = t => t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t;
 
         const step = (currentTime) => {
@@ -22,7 +22,6 @@ const useSmoothScroll = () => {
             if (time < duration) {
                 window.requestAnimationFrame(step);
             } else {
-                // set the current section when scrolling is finished
                 const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
                 const newSection = sections.find(id => {
                     const section = document.getElementById(id);
@@ -66,6 +65,13 @@ const useSmoothScroll = () => {
             goToSection(sections[currentIndex - 1]);
         }
     };
+
+    useEffect(() => {
+        const handleResize = () => setIsSmallScreen(window.innerWidth < 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     useEffect(() => {
         const handleScroll = () => {
             const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
@@ -83,6 +89,7 @@ const useSmoothScroll = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
     useEffect(() => {
         const handleWheel = debounce((e) => {
             e.preventDefault();
@@ -108,14 +115,16 @@ const useSmoothScroll = () => {
             }
         };
 
-        document.addEventListener('wheel', handleWheel, { passive: false });
-        document.addEventListener('keydown', handleKeyDown);
+        if (!isSmallScreen) {
+            document.addEventListener('wheel', handleWheel, { passive: false });
+            document.addEventListener('keydown', handleKeyDown);
+        }
 
         return () => {
             document.removeEventListener('wheel', handleWheel);
             document.removeEventListener('keydown', handleKeyDown);
         };
-    }, [currentSection]);
+    }, [currentSection, isSmallScreen]);
 
     return { currentSection, goToSection };
 };

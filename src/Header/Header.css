@@ -20,6 +20,7 @@ header p {
 #logo {
     height: 80px;
     width: auto;
+    z-index: 2;
 }
 
 .nav-links {
@@ -44,6 +45,11 @@ header p {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    
+}
+
+.nav-item p {
+    font-size: 1.1rem;
 }
 
 .nav-text {
@@ -57,23 +63,26 @@ header p {
     content: '';
     width: 24px;
     height: 20px;
-    background-color: #cc0066;
+    background-color: #b3005c90;
     opacity: 0;
-    transform: translateX(8px);
+    transform: translateX(16px);
     transition: opacity 0.3s, transform 0.3s;
     z-index: -1;
 }
 
 .nav-text:hover::after {
     opacity: .5;
-    transform: translateX(-8px);
+    transform: translateX(-16px);
 }
 
 .marginright {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 0.5rem;
 }
 
+.marginsides {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem
+}
 /* hide the menu by default */
 .hamburger-container {
     display: none;
@@ -114,18 +123,13 @@ header p {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .mobile-menu .mobile-socials p {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.75rem;
-}
-
-.mobile-menu .button {
-    width: 14% !important;
-    height: 8%;
-    margin-left: 5rem;
+    letter-spacing: 0.65rem;
 }
 
 .mobile-socials {
@@ -133,13 +137,12 @@ header p {
     align-items: center;
     justify-content: center;
     margin-left: 5rem;
-
 }
 
 .mobile-menu .mobile-short-links {
     display: flex;
     flex-direction: row;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
 }
 
 .mobile-short-links li::before {
@@ -148,6 +151,9 @@ header p {
 
 .mobile-short-links li:first-child {
     padding: 0;
+}
+.mobile-short-links li{
+    padding:0 0 0 0.35rem
 }
 
 .mobile-menu .nav-item p:first-of-type {
@@ -159,7 +165,8 @@ header p {
 }
 
 .mobile-menu .mobile-socials .mobile-short-links a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 /* show the menu and hide nav-links on smaller screens */
@@ -167,10 +174,11 @@ header p {
     .hamburger-container {
         display: block;
         align-self: center;
+        z-index: 2;
     }
 
     .nav-links,
-    .button {
+    .resume-button {
         display: none;
     }
 
@@ -179,82 +187,88 @@ header p {
         display: flex;
         margin: auto;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
-        top: 12%;
         right: 1%;
         width: 100%;
-        height: 88%;
+        height: 100%;
         background-color: #181818;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         z-index: 1;
+        will-change: opacity, transform, filter;
+    }
+
+    .nav-text::after {
+        width: 2rem;
+        height: 1.75rem;
     }
 }
 
 /* resume button */
-.button {
+.resume-button {
     all: unset;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 20px;
-    height: 50%;
+    height: 55%;
     position: relative;
-    border: #cc0066 solid 1.5px;
+    border: #b3005c solid 1.5px;
     border-radius: 5px;
-    color: #cc0066;
+    color: #b3005c;
     cursor: pointer;
     overflow: hidden;
     transition: border 300ms, color 300ms;
     user-select: none;
 }
 
-.button p {
+.resume-button p {
     z-index: 1;
+    font-size: 1.1rem;
 }
 
-.button:hover {
+.resume-button:hover {
     color: #DCDCDC;
 }
 
-.button:active {
-    border-color: #cc0066;
+.resume-button:active {
+    border-color: #b3005c;
 }
 
-.button::after,
-.button::before {
+.resume-button::after,
+.resume-button::before {
     content: "";
     position: absolute;
     width: 9em;
     aspect-ratio: 1;
-    background: #cc0066;
+    background: #b3005c;
     opacity: 25%;
     border-radius: 50%;
     transition: transform 500ms, background 300ms;
 }
 
-.button::before {
+.resume-button::before {
     left: 0;
     transform: translateX(-8em);
 }
 
-.button::after {
+.resume-button::after {
     right: 0;
     transform: translateX(8em);
 }
 
-.button:hover:before {
+.resume-button:hover:before {
     transform: translateX(-1em);
 }
 
-.button:hover:after {
+.resume-button:hover:after {
     transform: translateX(1em);
 }
 
-.button:active:before,
-.button:active:after {
-    background: #cc0066;
+.resume-button:active:before,
+.resume-button:active:after {
+    background: #b3005c;
 }
 
 @media (max-width: 992px) {

@@ -4,7 +4,11 @@ function DiscordLink() {
     const profileURL = `https://discord.com/users/xanyi/8739`;
 
     return (
-        <a className="contacts-link eiderwhite" href={profileURL} target="_blank" rel="noopener noreferrer">
+        <a  
+            className="contacts-link eiderwhite nav-text"
+            href={profileURL}
+            target="_blank"
+            rel="noopener noreferrer">
             DC
         </a>
     );
