@@ -1,15 +1,10 @@
-/* .second-projects-title-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.second-projects-title {
-    grid-area: 1 / 2 / 2 / 3;
-    padding: 0px 36px;
-} */
-
 .third-project-section {
-    align-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .third-project-container {
@@ -27,6 +22,22 @@
 .third-project-description-container {
     display: grid;
     grid-area: 1 / 2 / 2 / 6;
+}
+
+.fit-description-card {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    background: #181818;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    text-align: right;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.fit-description-card:hover {
+    box-shadow: 0 0 10px rgba(166, 0, 83, 0.8);
+    border: 1px solid rgba(166, 0, 83, 0.8);
+    border-color: rgba(166, 0, 83, 0.8);
 }
 
 .fit-card-list {
@@ -71,20 +82,25 @@
 @media (max-width: 992px) {
     .third-project-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+        gap: 10px;
     }
 
     .third-project-description-container {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .fit-card-container {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 1 / 1 / 2 / 8;
     }
 
     .fit-card {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+
+    .fit-card-container {
+        grid-area: 2 / 1 / 3 / 12;
+    }
+
+    .fit-card-list {
+        flex-direction: row-reverse;
     }
 
     .fit-card:hover {
@@ -94,46 +110,35 @@
     .fit-card:hover~.fit-card {
         transform: translateX(0);
     }
+
+    .fitness-img {
+        height: auto;
+        width: 70%;
+    }
 }
 
 @media (max-width: 768px) {
-    .third-project-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
     .third-project-description-container {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1 / 1 / 2 / 11;
     }
 
     .fit-card-container {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 11;
     }
 
-    .fit-card {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 1rem;
+    .fitness-img {
+        height: auto;
+        width: 70%;
     }
+
 }
 
 @media (max-width: 576px) {
-    .third-project-container {
-        grid-template-columns: 1fr;
-        padding: 5px;
-    }
-
-    .third-project-description-container {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
     .fit-card-container {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 12;
     }
 
-    .fit-card {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+    .fit-card:last-of-type {
+        display: none;
     }
 }

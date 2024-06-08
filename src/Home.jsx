@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { useSpring, animated } from "react-spring";
 import useSmoothScroll from "./components/useSmoothScroll";
 import Navigation from "./components/Navigation";
 import Header from "./Header/Header";
@@ -7,47 +8,46 @@ import SecondProject from "./secondProject/SecondProject";
 import Contact from "./contact/Contact";
 import About from "./about/About";
 import Start from "./start/Start";
+import useOnScreen from "./components/intersectionObserver";
+
+const Section = ({ id, children, className }) => {
+    const [ref, isVisible] = useOnScreen({ threshold: 0.25 }, 150);
+    const animationProps = useSpring({
+        opacity: isVisible ? 1 : 0,
+        filter: isVisible ? 'blur(0px)' : 'blur(3px)',
+        config: { mass: 1, tension: 150, friction: 14 },
+    });
+
+    return (
+        <animated.section ref={ref} style={animationProps} className={className} id={id}>
+            {children}
+        </animated.section>
+    );
+};
 
 const Home = () => {
     const { currentSection, goToSection } = useSmoothScroll();
-    // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    // useEffect(() => {
-    //     // Intersection Observer
-    //     const observer = new IntersectionObserver((entries) => {
-    //         entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
-    //                 entry.target.classList.add('show');
-    //             } else {
-    //                 entry.target.classList.remove('show');
-    //             }
-    //         });
-    //     });
-
-    //     const hiddenElements = document.querySelectorAll('.hidden');
-    //     hiddenElements.forEach((el) => observer.observe(el));
-    // }, []);
 
     return (
         <>
             <Navigation currentSection={currentSection} goToSection={goToSection} />
-            <div className="section-container hidden">
-                <section id="section1" tabIndex="-1" className="start-section">
+            <div className="section-container">
+                <Section id="section1" className="start-section">
                     <Header goToSection={goToSection} />
                     <Start />
-                </section>
-                <section id="section2" tabIndex="-1" className="hidden about-section">
+                </Section>
+                <Section id="section2" className="about-section">
                     <About />
-                </section>
-                <section id="section3" tabIndex="-1" className='hidden projects-section'>
+                </Section>
+                <Section id="section3" className="projects-section">
                     <FirstProject />
-                </section>
-                <section id="section4" tabIndex="-1" className="hidden third-project-section">
+                </Section>
+                <Section id="section4" className="third-project-section">
                     <SecondProject />
-                </section>
-                <section id="section5" tabIndex="-1" className="hidden contact-section">
+                </Section>
+                <Section id="section5" className="contact-section">
                     <Contact />
-                </section>
+                </Section>
             </div>
         </>
     );

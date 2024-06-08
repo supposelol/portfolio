@@ -8,7 +8,7 @@ import fit4 from "../assets/fit4.png";
 const SecondProject = () => {
     return (
         <>
-           
+
             <div className="third-project-container">
                 <div className="third-project-description-container">
                     <div className="fit-description">
@@ -16,7 +16,7 @@ const SecondProject = () => {
                             <p className="orbitron darkpink featured-title">Featured Project</p>
                             <h4 className="description-heading">Fitness App</h4>
                         </div>
-                        <div className="description-card">
+                        <div className="fit-description-card">
                             <div className="description-content align-left">
                                 <p className="description-para lightgray">
                                     A sleek and minimalist app built with React Native and rapidApi.

@@ -96,3 +96,9 @@
         gap: 16px;
     }
 }
+
+@media (max-width: 576px) {
+    .contact-footer {
+        gap: 10px;
+    }
+}

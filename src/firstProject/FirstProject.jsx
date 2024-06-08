@@ -7,10 +7,11 @@ const FirstProject = () => {
 
     return (
         <>
-            <div className="title-container">
-                <h3><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
-            </div>
+
             <div className="first-project">
+                <div className="project-title-container">
+                    <h3><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
+                </div>
                 <div className="kicks-img-container">
                     <img src={kicks} alt="Kicks" id="kicks"></img>
                 </div>

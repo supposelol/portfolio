@@ -22,8 +22,8 @@ const About = () => {
                     <p className="eiderwhite">
                         The mid-2000s were a time when I honed my creative side by designing intros and avatars
                         in browser-based games — a simpler era for online gaming (~_^). It was then that I came upon
-                        my apprecciation for coding and design. These simple customizations sparked an obsession that never
-                        went away, even as I built a career in a very different field.
+                        my apprecciation for coding and design. These simple customizations hooked me,
+                        even as I built a career in a very different field.
                     </p>
                     <p className="eiderwhite">
                         Following my relocation to America, I expanded my knowledge of in-demand languages and frameworks.

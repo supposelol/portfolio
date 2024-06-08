@@ -2,7 +2,6 @@
     align-content: center;
 }
 
-/* START OF FIRST PROJECT */
 .first-project {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -12,8 +11,8 @@
 
 .kicks-img-container {
     position: relative;
-    grid-area: 1 / 2 / 2 / 9
-        /*row-start col-start row-end col-end */
+    grid-area: 2 / 2 / 3 / 9;
+    /*row-start col-start row-end col-end */
 }
 
 #kicks {
@@ -38,11 +37,11 @@
     z-index: 1;
 }
 
-.title-container {
+.project-title-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-area: 1 / 2 / 2 / 12;
 }
+
 
 .featured-title {
     font-size: 12px;
@@ -58,7 +57,7 @@
 }
 
 .kicks-description {
-    grid-area: 1 / 8 / 2 / 12;
+    grid-area: 2 / 8 / 3 / 12;
     z-index: 1;
     align-content: center;
 }
@@ -95,7 +94,7 @@
 
 @media (max-width: 1200px) {
 
-    .title-container {
+    .project-title-container {
         display: flex;
         justify-content: flex-start;
         width: 100%;
@@ -112,7 +111,7 @@
     #kicks {
         display: block;
         width: 100%;
-        max-height: 50vh ;
+        max-height: 50vh;
         object-fit: cover;
         position: relative;
         border-radius: 5px;
@@ -121,7 +120,7 @@
     .kicks-img-container {
         position: relative;
         width: 100%;
-        height: 50vh ;
+        height: 50vh;
     }
 
     .kicks-description {
@@ -131,7 +130,7 @@
     }
 
     .description-card {
-        width: 50%;
+        width: 65%;
     }
 }
 
@@ -139,6 +138,7 @@
     .description-card {
         width: 60%;
     }
+
     #kicks {
         max-height: 40vh;
     }
@@ -153,6 +153,7 @@
     .description-card {
         width: auto;
     }
+
     #kicks {
         max-height: 30vh;
     }

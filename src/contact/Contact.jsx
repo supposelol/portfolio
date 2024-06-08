@@ -17,7 +17,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div className="contact-info">
-                        <p className="whitepink">Find me on</p>
+                        <p className="eiderwhite">Find me on</p>
                         <div className="social-card">
                             <button className="social-btn github">
                                 <span className="social-svgContainer">

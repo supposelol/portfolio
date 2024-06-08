@@ -14,10 +14,10 @@ const Start = () => {
                     <h1 className="minimal-margin">Sandor Szabo</h1>
                     <h2 className="eiderwhite minimal-margin">I'm a Full-Stack Developer</h2>
                     <p className="lightgray minimal-margin">
+                        Based in Texas, US.
                         I like to craft solid and scalable
                         <span className="darkpink"> Web</span> and
                         <span className="darkpink"> Mobile</span> applications with great user experiences.
-                        I have a knack for finding solutions and turning ideas into reality.
                     </p>
                 </div>
                 {isMediumOrSmaller && (
