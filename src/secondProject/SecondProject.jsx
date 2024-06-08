@@ -8,10 +8,7 @@ import fit4 from "../assets/fit4.png";
 const SecondProject = () => {
     return (
         <>
-            {/* PUT A SEPERATOR HERE MAYBE */}
-            {/* <div className="projects-title-container">
-                    <h3 className="projects-title"></h3>
-                </div> */}
+           
             <div className="third-project-container">
                 <div className="third-project-description-container">
                     <div className="fit-description">
@@ -40,7 +37,6 @@ const SecondProject = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
                 <div className="fit-card-container">
                     <div className="fit-card-list">

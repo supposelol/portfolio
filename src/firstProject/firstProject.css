@@ -111,17 +111,17 @@
 
     #kicks {
         display: block;
-        width: 678.38px;
-        max-height: 300px !important;
-        object-fit: contain;
+        width: 100%;
+        max-height: 50vh ;
+        object-fit: cover;
         position: relative;
         border-radius: 5px;
     }
 
     .kicks-img-container {
         position: relative;
-        width: 678.38px;
-        height: 300px !important;
+        width: 100%;
+        height: 50vh ;
     }
 
     .kicks-description {
@@ -139,10 +139,25 @@
     .description-card {
         width: 60%;
     }
+    #kicks {
+        max-height: 40vh;
+    }
+
+    .kicks-img-container {
+        height: 40vh
+    }
+
 }
 
 @media (max-width: 768px) {
     .description-card {
         width: auto;
+    }
+    #kicks {
+        max-height: 30vh;
+    }
+
+    .kicks-img-container {
+        height: 30vh
     }
 }
