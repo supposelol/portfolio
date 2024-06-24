@@ -100,6 +100,7 @@ const useSmoothScroll = () => {
             }
         }, 200, { leading: true, trailing: false });
 
+
         const handleKeyDown = (e) => {
             switch (e.key) {
                 case 'ArrowDown':

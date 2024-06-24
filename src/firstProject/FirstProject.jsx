@@ -1,13 +1,15 @@
 import "./firstProject.css";
 import "./svgButtons.css";
 import kicks from "../assets/kicks.png";
-import kickstwo from "../assets/kickstwo.png";
 
 const FirstProject = () => {
+    const kicksGitClick = () => {
+        const kicksGitUrl = 'https://github.com/supposelol/sandorkicks';
+        window.open(kicksGitUrl, '_blank');
+    };
 
     return (
         <>
-
             <div className="first-project">
                 <div className="project-title-container">
                     <h3><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
@@ -29,7 +31,7 @@ const FirstProject = () => {
                         </div>
                     </div>
                     <div className="description-btn-container">
-                        <button className="Btn">
+                        <button className="Btn" onClick={kicksGitClick}>
                             <span className="svgContainer">
                                 <svg fill="white" viewBox="0 0 496 512" height="1.6em">
                                     <path
@@ -40,7 +42,7 @@ const FirstProject = () => {
                             <span className="BG"></span>
                         </button>
 
-                        <button className="Btn">
+                        <button className="Btn" onClick={kicksGitClick}>
                             <span className="svgContainer">
                                 <svg viewBox="0 0 24 24" fill="white" height="1.6em">
                                     <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />

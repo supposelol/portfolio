@@ -6,9 +6,12 @@ import fit3 from "../assets/fit3.png";
 import fit4 from "../assets/fit4.png";
 
 const SecondProject = () => {
+    const fitnessGitClick = () => {
+        const fitnessGitUrl = 'https://github.com/supposelol/fitness-app';
+        window.open(fitnessGitUrl, '_blank');
+    };
     return (
         <>
-
             <div className="third-project-container">
                 <div className="third-project-description-container">
                     <div className="fit-description">
@@ -25,7 +28,7 @@ const SecondProject = () => {
                             </div>
                         </div>
                         <div className="description-btn-container align-left">
-                            <button className="Btn">
+                            <button className="Btn" onClick={fitnessGitClick}>
                                 <span className="svgContainer">
                                     <svg fill="white" viewBox="0 0 496 512" height="1.6em">
                                         <path
