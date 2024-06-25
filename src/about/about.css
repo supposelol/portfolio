@@ -49,6 +49,7 @@ ul li {
     padding-left: 2rem;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 ul li::before {

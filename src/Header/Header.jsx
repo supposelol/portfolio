@@ -7,6 +7,7 @@ import "./header.css";
 import "./hamburger.css";
 import GHLink from "../components/links/githubLink";
 import LinkedinLink from "../components/links/linkedinLink";
+import Resume from "../old/resume/resume";
 
 const Header = ({ goToSection }) => {
     const handleClick = (sectionId) => {

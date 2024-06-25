@@ -1,6 +1,6 @@
 import "./secondProject.css";
 import "../firstProject/svgButtons.css";
-import fit from "../assets/fit1.png";
+import fit1 from "../assets/fit1.png";
 import fit2 from "../assets/fit2.png";
 import fit3 from "../assets/fit3.png";
 import fit4 from "../assets/fit4.png";
@@ -47,13 +47,13 @@ const SecondProject = () => {
                             <img src={fit4} className="fitness-img"></img>
                         </div>
                         <div className="fit-card">
+                            <img src={fit3} className="fitness-img"></img>
+                        </div>
+                        <div className="fit-card">
                             <img src={fit2} className="fitness-img"></img>
                         </div>
                         <div className="fit-card">
-                            <img src={fit} className="fitness-img"></img>
-                        </div>
-                        <div className="fit-card">
-                            <img src={fit3} className="fitness-img"></img>
+                            <img src={fit1} className="fitness-img"></img>
                         </div>
                     </div>
                 </div>

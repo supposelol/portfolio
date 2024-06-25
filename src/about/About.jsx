@@ -39,7 +39,7 @@ const About = () => {
                             <li className="line-list"></li>
                             <li>Python</li>
                             <li>SQL</li>
-                            <li>DevOps</li>
+                            <li>Cloud Computing</li>
                         </ul>
                     </div>
                 </div>

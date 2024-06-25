@@ -1,7 +1,7 @@
 import React from 'react';
 
 function LinkedinLink() {
-    const profileURL = `https://www.linkedin.com/in/sandor-szabo-94a16a239/`;
+    const profileURL = `https://www.linkedin.com/in/sandor-szabo1/`;
 
     return (
         <a className="contacts-link eiderwhite nav-text" href={profileURL} target="_blank" rel="noopener noreferrer">
