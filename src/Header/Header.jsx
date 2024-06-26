@@ -7,9 +7,9 @@ import "./header.css";
 import "./hamburger.css";
 import GHLink from "../components/links/githubLink";
 import LinkedinLink from "../components/links/linkedinLink";
-import Resume from "../old/resume/resume";
 
 const Header = ({ goToSection }) => {
+    // Section navigation and close the menu
     const handleClick = (sectionId) => {
         goToSection(sectionId);
         setOpenMenu(false);
@@ -33,12 +33,14 @@ const Header = ({ goToSection }) => {
         config: { duration: 300 },
     });
 
+    // Reset the menu icon state when the menu is closed
     useEffect(() => {
         if (!openMenu) {
             setIsMenuIconActive(false);
         }
     }, [openMenu]);
 
+    // For the animation state with a timeout
     useEffect(() => {
         if (isAnimating) {
             const timeout = setTimeout(() => {
@@ -48,6 +50,7 @@ const Header = ({ goToSection }) => {
         }
     }, [isAnimating]);
 
+    // Toggle body scroll when the menu is open/closed
     useEffect(() => {
         const body = document.querySelector('body');
         if (openMenu) {
@@ -65,6 +68,10 @@ const Header = ({ goToSection }) => {
         setIsMenuIconActive(!isMenuIconActive);
     };
 
+    const resumeClick = () => {
+        window.open('/resume', '_blank');
+    };
+
     return (
         <header>
             <div id="logo-container">
@@ -80,11 +87,11 @@ const Header = ({ goToSection }) => {
                 <div className="nav-item" onClick={() => handleClick('section5')}>
                     <p className="darkpink">3.</p><p className="marginsides eiderwhite nav-text">Contact</p>
                 </div>
-                <button className="resume-button">
+                <button className="resume-button" onClick={resumeClick}>
                     <p>Resume</p>
                 </button>
             </div>
-
+            {/* Hamburger menu */}
             <div className={`hamburger-container ${openMenu ? 'open' : ''}`}
                 onClick={handleMenuClick}
             >
@@ -94,7 +101,7 @@ const Header = ({ goToSection }) => {
                     <span></span>
                 </button>
             </div>
-
+            {/* Mobile menu */}
             {(openMenu || isAnimating) && (
                 <animated.ul className="mobile-menu"
                     style={openMenuAnimation}>
@@ -108,7 +115,7 @@ const Header = ({ goToSection }) => {
                         <div className="nav-item" onClick={() => handleClick('section5')}>
                             <p className="darkpink">3.</p><p className="eiderwhite nav-text">Contact</p>
                         </div>
-                        <div className="nav-item">
+                        <div className="nav-item" onClick={resumeClick}>
                             <p className="whitepink nav-text">My Resume</p>
                         </div>
                     </div>

@@ -30,11 +30,6 @@
     align-items: center;
 }
 
-.blob-motion {
-    position: absolute;
-    transform: translateY(-20%);
-}
-
 ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

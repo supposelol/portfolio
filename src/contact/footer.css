@@ -73,6 +73,11 @@
 
 }
 
+.contact-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .contact-title-container {

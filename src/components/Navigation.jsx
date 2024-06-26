@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// CSS-in-JS for the little navigation bar
 const StyledNavigation = styled.nav`
   z-index: 1;
   display: flex;
@@ -102,6 +103,7 @@ const StyledNavigation = styled.nav`
   }
 `;
 
+// Bullet component for navigation buttons
 const Bullet = ({ name, ordinal, currentSection, goToSection }) => {
   const handleClick = () => {
     goToSection(name);

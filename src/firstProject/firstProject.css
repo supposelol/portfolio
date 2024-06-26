@@ -88,6 +88,8 @@
 .description-content .description-para {
     align-self: flex-end;
     margin: 0;
+    font-size: 0.875em;
+    font-weight: lighter;
 }
 
 /* RESPONSIVE */

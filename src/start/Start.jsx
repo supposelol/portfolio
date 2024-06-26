@@ -4,6 +4,7 @@ import selfie from "../assets/jerry.jpeg";
 import useResize from "../components/useResize";
 
 const Start = () => {
+    // Get the resize states from the custom hook
     const { isMediumOrSmaller, isMediumOrLarger } = useResize();
 
     return (

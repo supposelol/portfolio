@@ -42,7 +42,7 @@ const Home = () => {
                 <Section id="section3" className="projects-section">
                     <FirstProject />
                 </Section>
-                <Section id="section4" className="third-project-section">
+                <Section id="section4" className="second-project-section">
                     <SecondProject />
                 </Section>
                 <Section id="section5" className="contact-section">

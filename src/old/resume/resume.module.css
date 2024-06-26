@@ -1,3 +1,4 @@
+/* Resume specific styles */
 .resume {
     max-width: 1200px;
     margin: auto;
@@ -17,14 +18,24 @@
     padding-right: 20px;
 }
 
-.headerTextContainer {
-    align-self: flex-start;
+.leftColumn p:not(:first-of-type) {
+    margin-left: 18px;
 }
 
 .headerMotto {
     margin-bottom: 20px;
     margin-left: 4px;
     color: #555;
+}
+
+.headerTextContainer h1 {
+    font-size: 64px;
+    color: #2F42C4;
+    margin-bottom: 0px;
+}
+
+.headerTextContainer p {
+    margin: 0;
 }
 
 .rightColumn {
@@ -35,35 +46,64 @@
     flex-direction: column;
 }
 
+.rightColumn img {
+    margin-top: 56px;
+    align-self: center;
+    max-width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .imgContainer {
     align-self: center;
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.headerTextContainer {
+    align-self: flex-start;
 }
 
 .main {
     display: flex;
 }
 
-.projects,
-.experience,
-.skills,
-.education {
+section h2 {
+    font-size: 24px;
+    color: #2F42C4;
+    border-bottom: 2px solid #2F42C4;
+    width: 90%;
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .job,
 .project,
 .school,
-.volunteer-job {
+.volunteerJob {
     margin-bottom: 10px;
 }
 
 .job h3,
 .project h3,
 .school h3,
-.volunteer-job h3 {
+.volunteerJob h3 {
     font-size: 18px;
     margin: 0;
+}
+
+.job h4,
+.volunteerJob h4 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.job p,
+.project ul,
+.school p,
+.volunteerJob p {
+    margin: 5px 0;
 }
 
 ul {
@@ -75,29 +115,21 @@ ul li {
     margin-bottom: 5px;
 }
 
-.left-column li {
+.leftColumn li {
     width: 90%;
 }
 
-.skill-title {
+.skillTitle {
     margin: 0;
     font-weight: bold;
 }
 
-.skill-list {
+.skillList {
     margin: 0;
     margin-bottom: 10px;
 }
 
-@media print {
-    .Btn-container {
-        display: none;
-    }
-}
-
-/* download button styles */
-
-.Btn-container {
+.BtnContainer {
     display: flex;
     margin-top: auto;
     margin-right: 40px;
@@ -117,7 +149,6 @@ ul li {
     cursor: pointer;
     position: relative;
     transition-duration: .3s;
-
 }
 
 .svgIcon {

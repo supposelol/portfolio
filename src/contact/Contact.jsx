@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
             <div className="contact-footer lightgray">
                 <p>© Sandor Szabo 2024</p>
-                <p>szabo.shani@gmail.com</p>
+                <p><a href="mailto:szabo.shani@gmail.com" target="_blank" rel="noopener noreferrer">szabo.shani@gmail.com</a></p>
             </div>
         </>
     );

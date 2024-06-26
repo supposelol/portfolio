@@ -19,9 +19,9 @@ const Resume = () => {
                     <h1>Sandor Szabo</h1>
                     <p className={styles.headerMotto}>Full stack developer focused on crafting modern digital experiences</p>
                 </div>
-                <div className={`${styles.rightColumn} ${styles.imgContainer}`}>
+                <div className={`${styles.rightColumn} ${styles.imgcontainer}`}>
                     <p><a href="mailto:szabo.shani@gmail.com">szabo.shani@gmail.com</a></p>
-                    <p><a href="https://sandorszabo.com" target="_blank" rel="noopener noreferrer">sandorszabo.com</a></p>
+                    <p><a href="https://sandorszabo.com" target="_blank" rel="noopener noreferrer">sandor-szabo.com</a></p>
                     <p><a href="https://github.com/supposelol" target="_blank" rel="noopener noreferrer">github.com/supposelol</a></p>
                     <p><a href="https://linkedin.com/in/sandor-szabo1" target="_blank" rel="noopener noreferrer">linkedin.com/in/sandor-szabo1</a></p>
                 </div>
@@ -31,12 +31,11 @@ const Resume = () => {
                     <section className={styles.projects}>
                         <h2>Selected Projects</h2>
                         <div className={styles.project}>
-                            <h3><a href="https://github.com/supposelol/sandorkicks" target="_blank" rel="noopener noreferrer">Sandor Kicks</a></h3>
+                            <h3><a href="https://sandorkicks.netlify.app/" target="_blank" rel="noopener noreferrer">Sandor Kicks</a></h3>
                             <ul>
                                 <li>Developed an e-commerce shoe shop using React.</li>
                                 <li>Implemented features including product listings with filtering, search and guides,
-                                    a shopping cart system with checkout, and a responsive design for different devices.</li>
-                                <li>Deployed blabla add this later.</li>
+                                    a shopping cart system with checkout, and responsive design for different devices.</li>
                             </ul>
                         </div>
                         <div className={styles.project}>
@@ -86,12 +85,12 @@ const Resume = () => {
                 <div className={styles.rightColumn}>
                     <section className={styles.skills}>
                         <h2>Skills</h2>
-                        <div className={styles.skillsDiv}>
+                        <div className={styles.skillsdiv}>
                             <p className={styles.skillTitle}>Languages</p><p className={styles.skillList}> JavaScript, Python, SQL</p>
                             <p className={styles.skillTitle}>Frontend</p><p className={styles.skillList}> React, React Native, Redux, Bootstrap</p>
                             <p className={styles.skillTitle}>Backend</p><p className={styles.skillList}> Node.js, Express.js</p>
                             <p className={styles.skillTitle}>Database</p><p className={styles.skillList}> MongoDB, PostgreSQL</p>
-                            <p className={styles.skillTitle}>DevOps</p><p className={styles.skillList}> Docker, Git, Kubernetes</p>
+                            <p className={styles.skillTitle}>DevOps</p><p className={styles.skillList}> Docker, Git, Kubernetes, Cloud Computing</p>
                         </div>
                     </section>
                     <section className={styles.education}>
@@ -102,10 +101,10 @@ const Resume = () => {
                             <p>Backend, SQL, and DevOps with Python</p>
                         </div>
                     </section>
-                    <div className={styles.btnContainer}>
+                    <div className={styles.BtnContainer}>
                         <button
                             onClick={downloadResume}
-                            className={styles.btn}>
+                            className={styles.Btn}>
                             <svg className={styles.svgIcon} viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
                             <span className={styles.icon2}></span>
                             <span className={styles.tooltip}>Download</span>

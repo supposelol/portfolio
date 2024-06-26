@@ -12,18 +12,19 @@ const SecondProject = () => {
     };
     return (
         <>
-            <div className="third-project-container">
-                <div className="third-project-description-container">
+            <div className="second-project-container">
+                <div className="second-project-description-container">
                     <div className="fit-description">
                         <div className="align-left fit-title">
-                            <p className="orbitron darkpink featured-title">Featured Project</p>
+                            <p className="orbitron darkpink featured-title-fit">Featured Project</p>
                             <h4 className="description-heading">Fitness App</h4>
                         </div>
                         <div className="fit-description-card">
                             <div className="description-content align-left">
                                 <p className="description-para lightgray">
-                                    A sleek and minimalist app built with React Native and rapidApi.
-                                    Allowing the user to browse exercises, save favorites, and track their progress.
+                                    Mobile app built with React Native. It fetches data from a third-party API,
+                                    employs Redux for state management,
+                                    and features an exercise database, favorites list, and progress tracking functionality.
                                 </p>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { debounce } from 'lodash';
 
+// Custom hook for smooth scrolling between sections
 const useSmoothScroll = () => {
     const [currentSection, setCurrentSection] = useState('section1');
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
@@ -37,6 +38,7 @@ const useSmoothScroll = () => {
         window.requestAnimationFrame(step);
     };
 
+    // Go to a specific section
     const goToSection = (sectionId, smooth = true) => {
         const section = document.getElementById(sectionId);
         if (!section) return;
@@ -66,12 +68,14 @@ const useSmoothScroll = () => {
         }
     };
 
+    // Screen resizing useEffect
     useEffect(() => {
         const handleResize = () => setIsSmallScreen(window.innerWidth < 768);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // Scrolling and update the current section useEffect
     useEffect(() => {
         const handleScroll = () => {
             const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
@@ -90,6 +94,7 @@ const useSmoothScroll = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Mouse wheel and keydown events useEffect
     useEffect(() => {
         const handleWheel = debounce((e) => {
             e.preventDefault();
