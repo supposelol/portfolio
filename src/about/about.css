@@ -38,13 +38,15 @@ ul {
     list-style: none;
 }
 
-
 ul li {
     position: relative;
     padding-left: 2rem;
     display: flex;
     align-items: center;
-    white-space: nowrap;
+}
+
+.hide-small {
+    display: inline;
 }
 
 ul li::before {
@@ -118,5 +120,25 @@ ul li::before {
     .about-container {
         max-width: 95% !important;
         padding-bottom: 4%;
+    }
+    .hide-small {
+        display: none;
+    }
+}
+.project-title-container .full-title {
+    display: inline;
+}
+
+.project-title-container .short-title {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .project-title-container .full-title {
+        display: none;
+    }
+
+    .project-title-container .short-title {
+        display: inline;
     }
 }

@@ -15,7 +15,13 @@ const FirstProject = () => {
         <>
             <div className="first-project">
                 <div className="project-title-container">
-                    <h3><span className="darkpink orbitron marginright">2.</span>Some Things I've built</h3>
+                    <h3>
+                        <span className="darkpink orbitron marginright">2.</span>
+                        <span className="responsive-title">
+                            <span className="full-title">Some Things I've Built</span>
+                            <span className="short-title">Projects</span>
+                        </span>
+                    </h3>
                 </div>
                 <div className="kicks-img-container">
                     <img src={kicks} alt="Kicks" id="kicks"></img>

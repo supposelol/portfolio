@@ -129,12 +129,29 @@
 }
 
 @media (max-width: 768px) {
+    .fit-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .align-left {
+        text-align: center;
+    }
+
+    .fit-title {
+        margin-left: 0;
+    }
+    .featured-title-fit {
+        text-align: center;
+        margin: 0 0 8px 0;
+    }
     .second-project-description-container {
-        grid-area: 1 / 1 / 2 / 11;
+        grid-area: 1 / 2 / 2 / 12;
     }
 
     .fit-card-container {
-        grid-area: 2 / 1 / 3 / 11;
+        grid-area: 2 / 2 / 3 / 12;
     }
 
     .fitness-img {

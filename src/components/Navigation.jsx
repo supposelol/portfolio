@@ -89,6 +89,42 @@ const StyledNavigation = styled.nav`
       }
     }
   }
+    
+  @media (min-width: 1200px) {
+    right: ${({ theme }) => theme.header?.padding ? `calc(${theme.header.padding} * 1.25)` : '2.5em'};
+    bottom: 25vh;
+    padding: 1.25em;
+
+    & > ul {
+      gap: 0.8125em !important;
+    }
+
+    & > ul > li {
+      width: 1.625em;
+      height: 1.625em;
+    }
+
+    & > ul > li > button {
+      width: 0.625em;
+      height: 0.625em;
+
+      &:focus {
+        transform: scale(1.125);
+      }
+
+      &:hover::after {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.125) !important;
+      }
+
+      &.current {
+        &::after {
+          width: 0.8125em !important;
+          height: 0.8125em !important;
+          border-width: 1.875px !important;
+        }
+      }
+    }
+  }
 
   @media (max-height: 600px) {
     bottom: 10vh;

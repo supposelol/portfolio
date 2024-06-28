@@ -163,4 +163,39 @@
     .kicks-img-container {
         height: 30vh
     }
+    .kicks-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .featured-title {
+        margin: 36px 0 8px 0;
+    }
+    .description-heading-container {
+        text-align: center;
+    }
+
+    .description-card {
+        text-align: center;
+    }
+
+    .description-content {
+        align-items: center;
+    }
+
+    .description-content .description-para {
+        text-align: center;
+        align-self: center;
+    }
+
+    .description-btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .description-btn-container .Btn {
+        margin: 0 0.5rem;
+    }
 }

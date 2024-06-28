@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./about.css";
 import useResize from "../components/useResize";
-import selfie from "../assets/jerry.jpeg"
+import selfie from "../assets/handsome.jpg"
 
 const About = () => {
     // Get the resize states from the custom hook
@@ -40,7 +40,7 @@ const About = () => {
                             <li className="line-list"></li>
                             <li>Python</li>
                             <li>SQL</li>
-                            <li>Cloud Computing</li>
+                            <li><span>Cloud</span><span class="hide-small">&nbsp;Computing</span></li>
                         </ul>
                     </div>
                 </div>

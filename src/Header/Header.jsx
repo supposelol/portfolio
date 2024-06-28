@@ -7,6 +7,7 @@ import "./header.css";
 import "./hamburger.css";
 import GHLink from "../components/links/githubLink";
 import LinkedinLink from "../components/links/linkedinLink";
+import resume from "../assets/resume.pdf";
 
 const Header = ({ goToSection }) => {
     // Section navigation and close the menu
@@ -72,6 +73,13 @@ const Header = ({ goToSection }) => {
         window.open('/resume', '_blank');
     };
 
+    const downloadResume = () => {
+        const anchor = document.createElement('a');
+        anchor.href = resume;
+        anchor.download = 'Sandor_Szabo_Resume.pdf';
+        anchor.click();
+    };
+
     return (
         <header>
             <div id="logo-container">
@@ -115,7 +123,7 @@ const Header = ({ goToSection }) => {
                         <div className="nav-item" onClick={() => handleClick('section5')}>
                             <p className="darkpink">3.</p><p className="eiderwhite nav-text">Contact</p>
                         </div>
-                        <div className="nav-item" onClick={resumeClick}>
+                        <div className="nav-item" onClick={downloadResume}>
                             <p className="whitepink nav-text">My Resume</p>
                         </div>
                     </div>

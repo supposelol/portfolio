@@ -104,3 +104,236 @@ h4 {
 }
 
 /* end of base styles */
+
+/* large screen fix */
+@media (min-width: 1200px) {
+    .first-project {
+        padding: 25px 25px 45px;
+    }
+
+    #kicks {
+        border-radius: 6.25px;
+    }
+
+    .featured-title {
+        font-size: 15px;
+        margin: 15px 2.5px 10px 0;
+    }
+
+    .featured-title-fit {
+        font-size: 15px;
+        margin: 15px 2.5px 10px 0;
+    }
+
+    .description-heading {
+        padding-bottom: 12.5px;
+    }
+
+    .description-card {
+        box-shadow: 0 12.5px 12.5px rgba(0, 0, 0, 0.2);
+        padding: 25px;
+        border-radius: 6.25px;
+    }
+
+    .description-card:hover {
+        box-shadow: 0 0 12.5px rgba(166, 0, 83, 0.8);
+    }
+
+    .description-content .description-para {
+        font-size: 1.09375em;
+    }
+
+    .contact-container {
+        max-width: 750px;
+        margin-top: 2.5rem;
+    }
+
+    .social-card {
+        gap: 18.75px;
+        margin: 25px 0;
+    }
+
+    .contact-footer {
+        gap: 3.125rem;
+        font-size: 1.125em;
+        padding-bottom: 2.5rem;
+    }
+
+    .contact-info p:first-of-type {
+        margin-bottom: -0.625rem;
+        font-size: 1.4375rem;
+        letter-spacing: 0.3125rem;
+    }
+
+    .first-project {
+        padding: 25px 25px 45px;
+    }
+
+    #kicks {
+        border-radius: 6.25px;
+    }
+
+    .featured-title {
+        font-size: 15px;
+        margin: 15px 2.5px 10px 0;
+    }
+
+    .description-heading {
+        padding-bottom: 12.5px;
+    }
+
+    .description-card {
+        box-shadow: 0 12.5px 12.5px rgba(0, 0, 0, 0.2);
+        padding: 25px;
+        border-radius: 6.25px;
+    }
+
+    .description-card:hover {
+        box-shadow: 0 0 12.5px rgba(166, 0, 83, 0.8);
+    }
+
+    .description-content .description-para {
+        font-size: 1.09375em;
+    }
+
+    .contact-container {
+        max-width: 750px;
+        margin-top: 2.5rem;
+    }
+
+    .social-card {
+        gap: 18.75px;
+        margin: 25px 0;
+    }
+
+    .contact-footer {
+        gap: 3.125rem;
+        font-size: 1.125em;
+        padding-bottom: 2.5rem;
+    }
+
+    .contact-info p:first-of-type {
+        margin-bottom: -0.625rem;
+        font-size: 1.4375rem;
+        letter-spacing: 0.3125rem;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    .Btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    header p {
+        font-size: 17.5px;
+    }
+
+    #logo {
+        height: 100px;
+    }
+
+    .nav-links {
+        font-size: 22.5px;
+    }
+
+    .nav-links>* {
+        margin-right: 10px;
+    }
+
+    .nav-item p {
+        font-size: 1.375rem;
+    }
+
+    .nav-text::after {
+        width: 30px;
+        height: 25px;
+        transform: translateX(20px);
+    }
+
+    .nav-text:hover::after {
+        transform: translateX(-20px);
+    }
+
+    .marginright {
+        margin-right: 0.625rem;
+    }
+
+    .marginsides {
+        margin-right: 0.625rem;
+        margin-left: 0.625rem;
+    }
+
+    .resume-button p {
+        font-size: 1.375rem;
+    }
+
+    .resume-button::after,
+    .resume-button::before {
+        width: 11.25em;
+    }
+
+    .resume-button::before {
+        transform: translateX(-10em);
+    }
+
+    .resume-button::after {
+        transform: translateX(10em);
+    }
+
+    .resume-button:hover:before {
+        transform: translateX(-1.25em);
+    }
+
+    .resume-button:hover:after {
+        transform: translateX(1.25em);
+    }
+
+    .text-content {
+        margin-right: 5rem;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    ul li {
+        padding-left: 2.5rem;
+    }
+
+    ul li::before {
+        left: 1.25rem;
+        width: 8.75px;
+        height: 8.75px;
+    }
+
+    .fit-card {
+        max-width: 300px;
+        min-width: 162.5px;
+        padding: 1.875rem;
+        margin-right: -8.75rem;
+    }
+
+}

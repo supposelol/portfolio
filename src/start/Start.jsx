@@ -1,6 +1,6 @@
 import React from "react";
 import "./start.css";
-import selfie from "../assets/jerry.jpeg";
+import selfie from "../assets/handsome.jpg";
 import useResize from "../components/useResize";
 
 const Start = () => {
