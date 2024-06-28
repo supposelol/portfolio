@@ -70,7 +70,7 @@ const Header = ({ goToSection }) => {
     };
 
     const resumeClick = () => {
-        window.open(resume, '_blank');
+        window.open('/resume', '_blank');
     };
 
     const downloadResume = () => {
