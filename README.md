@@ -1,6 +1,6 @@
-# [Sandor Szabo] - Portfolio
+# Sandor Szabo - Portfolio
 
-Welcome to my portfolio site repository! This website showcases my skills and projects.
+Welcome to my portfolio site repository!
 
 ## [Live Site](https://www.sandor-szabo.com)
 

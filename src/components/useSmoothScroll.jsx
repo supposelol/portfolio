@@ -13,6 +13,7 @@ const useSmoothScroll = () => {
 
         const easeInOutQuint = t => t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t;
 
+        // Calculate the current scroll position, scroll the window, update currentSection
         const step = (currentTime) => {
             const time = currentTime - startTime;
             const percent = Math.min(time / duration, 1);

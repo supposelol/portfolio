@@ -117,3 +117,10 @@ const Resume = () => {
 };
 
 export default Resume;
+
+// <div class="right-column imgcontainer">
+//                             <p><a href="mailto:szabo.shani@gmail.com"><i class="fas fa-envelope link-icon"></i></a> szabo.shani@gmail.com</p>
+//                             <p><a href="https://sandor-szabo.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-link link-icon"></i></a> sandor-szabo.com</p>
+//                             <p><a href="https://github.com/supposelol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github link-icon"></i></a> github.com/supposelol</p>
+//                             <p><a href="https://linkedin.com/in/sandor-szabo1" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin link-icon"></i></a> linkedin.com/in/sandor-szabo1</p>
+//                         </div>

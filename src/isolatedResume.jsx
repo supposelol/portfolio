@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import resume from "./assets/resume.pdf"
+import resume from "./assets/resume.pdf";
 
 const IsolatedResume = () => {
     const iframeRef = useRef(null);
@@ -20,6 +20,12 @@ const IsolatedResume = () => {
             a {
                 text-decoration: none;
                 color: inherit;
+            }
+
+            .link-icon {
+                margin-left: 4px;
+                color: inherit;
+                font-size: 0.75em;
             }
 
             .resume {
@@ -124,7 +130,9 @@ const IsolatedResume = () => {
             .school p {
                 margin: 5px 0;
             }
-
+            .completion-date {
+                padding-bottom: 16px;
+            }
             ul {
                 list-style-type: disc;
                 padding-left: 20px;
@@ -249,6 +257,7 @@ const IsolatedResume = () => {
             <html>
             <head>
                 <style>${styles}</style>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
             </head>
             <body>
                 <div class="resume">
@@ -269,7 +278,7 @@ const IsolatedResume = () => {
                             <section class="projects">
                                 <h2>Selected Projects</h2>
                                 <div class="project">
-                                    <h3><a href="https://sandorkicks.netlify.app/" target="_blank" rel="noopener noreferrer">Sandor Kicks</a></h3>
+                                    <h3><a href="https://sandorkicks.netlify.app/" target="_blank" rel="noopener noreferrer">Sandor Kicks<i class="fas fa-link link-icon"></i></a></h3>
                                     <ul>
                                         <li>Developed an e-commerce shoe shop using React.</li>
                                         <li>Implemented features including product listings with filtering, search and guides,
@@ -277,22 +286,19 @@ const IsolatedResume = () => {
                                     </ul>
                                 </div>
                                 <div class="project">
-                                    <h3><a href="https://github.com/supposelol/fitness-app" target="_blank" rel="noopener noreferrer">Fitness App</a></h3>
+                                    <h3><a href="https://github.com/supposelol/fitness-app" target="_blank" rel="noopener noreferrer">Fitness App<i class="fas fa-link link-icon"></i></a></h3>
                                     <ul>
                                         <li>Built a cross-platform mobile application using React Native.</li>
                                         <li>Integrated a third-party API to fetch exercise data.</li>
                                         <li>Used Redux for state management.</li>
-                                        <li>Key features include a rich exercise browser,
-                                        favorites system, and progress tracking.</li>
+                                        <li>Key features include a rich exercise browser, favorites system, and progress tracking.</li>
                                     </ul>
                                 </div>
                                 <div class="project">
-                                    <h3><a href="https://github.com/supposelol/nucampsiteserver" target="_blank" rel="noopener noreferrer">Backend and DevOps</a></h3>
+                                    <h3><a href="https://github.com/supposelol/api-integration-project" target="_blank" rel="noopener noreferrer">Backend and DevOps<i class="fas fa-link link-icon"></i></a></h3>
                                     <ul>
-                                        <li>Developed REST APIs using Node.js and Express, integrating MongoDB
-                                        with Mongoose ODM for data modeling.</li>
-                                        <li>Deployed containerized Django applications using Docker on AWS EC2,
-                                        GCP Cloud Run with Cloud SQL, and Azure Kubernetes Service with a SQL database.</li>
+                                        <li>Developed REST APIs using Node.js and Express, integrating MongoDB with Mongoose ODM for data modeling.</li>
+                                        <li>Deployed containerized Django applications using Docker on AWS EC2, GCP Cloud Run with Cloud SQL, and Azure Kubernetes Service with a SQL database.</li>
                                     </ul>
                                 </div>
                             </section>
@@ -328,7 +334,7 @@ const IsolatedResume = () => {
                                     <p class='skill-title'>Frontend</p><p class='skill-list'> React, React Native, Redux, Bootstrap</p>
                                     <p class='skill-title'>Backend</p><p class='skill-list'> Node.js, Express.js</p>
                                     <p class='skill-title'>Database</p><p class='skill-list'> MongoDB, PostgreSQL</p>
-                                    <p class='skill-title'>DevOps</p><p class='skill-list'> Docker, Git, Kubernetes, Cloud Computing</p>
+                                    <p class='skill-title'>DevOps</p><p class='skill-list'> Docker, Git, Cloud Computing</p>
                                 </div>
                             </section>
                             <section class="education">
@@ -336,6 +342,7 @@ const IsolatedResume = () => {
                                 <div class="school">
                                     <h3>Nucamp</h3>
                                     <h4>Honor Graduate</h4>
+                                    <p class="completion-date">Completed: July 2024</p>
                                     <p>Full Stack Web and Mobile Development</p>
                                     <p>Backend, SQL, and DevOps with Python</p>
                                 </div>

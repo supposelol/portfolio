@@ -11,6 +11,7 @@ import Start from "./start/Start";
 import useOnScreen from "./components/intersectionObserver";
 
 const Section = ({ id, children, className }) => {
+    // Trigger the observer when 25% of the Section is visible and 1.5s delay before setting the visibility state to true
     const [ref, isVisible] = useOnScreen({ threshold: 0.25 }, 150);
     const animationProps = useSpring({
         opacity: isVisible ? 1 : 0,
