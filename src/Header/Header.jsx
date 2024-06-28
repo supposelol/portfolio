@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import EmailLink from "../components/links/emailLink";
 import DiscordLink from "../components/links/discordLink";
@@ -10,6 +11,7 @@ import LinkedinLink from "../components/links/linkedinLink";
 import resume from "../assets/resume.pdf";
 
 const Header = ({ goToSection }) => {
+    const navigate = useNavigate();
     // Section navigation and close the menu
     const handleClick = (sectionId) => {
         goToSection(sectionId);
@@ -70,7 +72,7 @@ const Header = ({ goToSection }) => {
     };
 
     const resumeClick = () => {
-        window.open('/resume', '_blank');
+        navigate('/resume');
     };
 
     const downloadResume = () => {
