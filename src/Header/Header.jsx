@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import EmailLink from "../components/links/emailLink";
 import DiscordLink from "../components/links/discordLink";
 import logo from "../assets/logo.png";
-import "./header.css";
+import "./Header.css";
 import "./hamburger.css";
 import GHLink from "../components/links/githubLink";
 import LinkedinLink from "../components/links/linkedinLink";
