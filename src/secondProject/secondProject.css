@@ -89,7 +89,6 @@
     margin-left: 2px;
 }
 
-
 @media (max-width: 992px) {
     .second-project-container {
         display: grid;
@@ -135,6 +134,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .align-left {
         text-align: center;
     }
@@ -142,10 +142,12 @@
     .fit-title {
         margin-left: 0;
     }
+
     .featured-title-fit {
         text-align: center;
         margin: 0 0 8px 0;
     }
+
     .second-project-description-container {
         grid-area: 1 / 2 / 2 / 12;
     }
@@ -168,5 +170,14 @@
 
     .fit-card:last-of-type {
         display: none;
+    }
+}
+
+/* Safari-only styles */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .fitness-img {
+            max-height: 68vh;
+        }
     }
 }

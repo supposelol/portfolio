@@ -1,5 +1,7 @@
 .projects-section {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .first-project {
@@ -163,15 +165,18 @@
     .kicks-img-container {
         height: 30vh
     }
+
     .kicks-description {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .featured-title {
         margin: 36px 0 8px 0;
     }
+
     .description-heading-container {
         text-align: center;
     }
@@ -197,5 +202,17 @@
 
     .description-btn-container .Btn {
         margin: 0 0.5rem;
+    }
+}
+
+/* Safari-specific styles */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .kicks-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
     }
 }
