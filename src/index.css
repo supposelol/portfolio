@@ -5,7 +5,7 @@ body {
     font-weight: 500;
     margin: 0;
     color: white;
-    background: #202731;
+    background: #1b212a;
 }
 
 .section-container {
@@ -40,11 +40,15 @@ section:focus {
 }
 
 .pink {
-    color: #cc0066;
+    color: #8395c1;
 }
 
 .darkpink {
-    color: #b3005c;
+    color: #4169E1;
+}
+
+.lightblue {
+    color: #d8ebf6;
 }
 
 .orbitron {
@@ -79,7 +83,7 @@ h3::after {
     content: "";
     flex-grow: 1;
     height: 1px;
-    background-color: #b3005c;
+    background-color: #4169E1;
     display: block;
 
 }
@@ -130,13 +134,8 @@ h4 {
     }
 
     .description-card {
-        box-shadow: 0 12.5px 12.5px rgba(0, 0, 0, 0.2);
         padding: 25px;
         border-radius: 6.25px;
-    }
-
-    .description-card:hover {
-        box-shadow: 0 0 12.5px rgba(166, 0, 83, 0.8);
     }
 
     .description-content .description-para {
@@ -183,13 +182,8 @@ h4 {
     }
 
     .description-card {
-        box-shadow: 0 12.5px 12.5px rgba(0, 0, 0, 0.2);
         padding: 25px;
         border-radius: 6.25px;
-    }
-
-    .description-card:hover {
-        box-shadow: 0 0 12.5px rgba(166, 0, 83, 0.8);
     }
 
     .description-content .description-para {

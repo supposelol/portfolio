@@ -62,7 +62,7 @@ ul li::before {
 
 .line-list {
     height: 1px;
-    background-color: #b3005c;
+    background-color: #4169E1;
     grid-column: span 3;
 }
 
@@ -121,10 +121,12 @@ ul li::before {
         max-width: 95% !important;
         padding-bottom: 4%;
     }
+
     .hide-small {
         display: none;
     }
 }
+
 .project-title-container .full-title {
     display: inline;
 }

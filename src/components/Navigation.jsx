@@ -6,7 +6,7 @@ const StyledNavigation = styled.nav`
   z-index: 1;
   display: flex;
   position: fixed;
-  color: #b3005c;
+  color: #4169E1;
   right: ${({ theme }) => theme.header?.padding || '2em'};
   bottom: 20vh;
   padding: 1em;

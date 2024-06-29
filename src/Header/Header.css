@@ -67,7 +67,7 @@ header p {
     content: '';
     width: 24px;
     height: 20px;
-    background-color: #b3005c90;
+    background-color: #304a99;
     opacity: 0;
     transform: translateX(16px);
     transition: opacity 0.3s, transform 0.3s;
@@ -105,6 +105,7 @@ header p {
 .mobile-nav-links {
     align-self: center;
 }
+
 .mobile-menu .mobile-items-container {
     display: flex;
     margin: auto;
@@ -222,9 +223,9 @@ header p {
     padding: 0 20px;
     height: 55%;
     position: relative;
-    border: #b3005c solid 1.5px;
+    border: #4169E1 solid 1.5px;
     border-radius: 5px;
-    color: #b3005c;
+    color: #4169E1;
     cursor: pointer;
     overflow: hidden;
     transition: border 300ms, color 300ms;
@@ -241,7 +242,7 @@ header p {
 }
 
 .resume-button:active {
-    border-color: #b3005c;
+    border-color: #4169E1;
 }
 
 .resume-button::after,
@@ -250,7 +251,7 @@ header p {
     position: absolute;
     width: 9em;
     aspect-ratio: 1;
-    background: #b3005c;
+    background: #4169E1;
     opacity: 25%;
     border-radius: 50%;
     transition: transform 500ms, background 300ms;
@@ -276,7 +277,7 @@ header p {
 
 .resume-button:active:before,
 .resume-button:active:after {
-    background: #b3005c;
+    background: #4169E1;
 }
 
 @media (max-width: 992px) {

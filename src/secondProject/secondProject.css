@@ -45,9 +45,9 @@
 }
 
 .fit-description-card:hover {
-    box-shadow: 0 0 10px rgba(166, 0, 83, 0.8);
-    border: 1px solid rgba(166, 0, 83, 0.8);
-    border-color: rgba(166, 0, 83, 0.8);
+    box-shadow: 0 0 10px rgba(65, 105, 225, 0.8);
+    border: 1px solid rgba(65, 105, 225, 0.8);
+    border-color: rgba(65, 105, 225, 0.8);
 }
 
 .fit-card-list {
