@@ -18,7 +18,7 @@ const Start = () => {
                         Based in Texas, US.
                         I like to craft solid and scalable
                         <span className="darkpink"> Web</span> and
-                        <span className="darkpink"> Mobile</span> applications with great user experiences.
+                        <span className="darkpink"> Mobile</span> applications with clean visual experiences.
                     </p>
                 </div>
                 {isMediumOrSmaller && (
