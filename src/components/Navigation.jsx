@@ -90,7 +90,7 @@ const StyledNavigation = styled.nav`
     }
   }
     
-  @media (min-width: 1200px) {
+  @media (min-width: 1441px) {
     right: ${({ theme }) => theme.header?.padding ? `calc(${theme.header.padding} * 1.25)` : '2.5em'};
     bottom: 25vh;
     padding: 1.25em;
