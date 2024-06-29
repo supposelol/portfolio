@@ -75,7 +75,7 @@ const StyledNavigation = styled.nav`
     }
 
     &:hover::after {
-      background-color: #cc0066 !important;
+      background-color: #304a99 !important;
       transform: translate(-50%, -50%) rotate(45deg) scale(1.1) !important; 
     }
 
