@@ -88,7 +88,7 @@ const Start = () => {
                     ))}
                 </div>
                 {isMediumOrSmaller && (
-                    <div className="card card-start">
+                    <div className="card">
                         <img src={selfie} alt="Selfie pic" id="selfie"></img>
                     </div>
                 )}
