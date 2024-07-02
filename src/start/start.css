@@ -71,6 +71,7 @@
     transition: all .2s;
     box-shadow: 12px 12px 2px 1px rgba(48, 74, 153, 0.8);
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .card:hover {
