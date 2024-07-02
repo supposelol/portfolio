@@ -1,45 +1,68 @@
 .start-section {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .index-container {
+    margin: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex: 1;
-    gap: 15rem;
-    width: 60%;
-    word-wrap: break-word;
-    margin-top: -10%;
+    justify-content: space-around;
+    align-self: center;
+    width: 90%;
+    max-width: 1400px;
 }
 
 .text-container {
-    width: 45%;
-    margin-right: auto;
+    flex: 1;
+    max-width: 400px;
 }
 
-.text-container p:first-of-type {
-    margin-left: 0.25rem;
+.squares-container {
+    z-index: -1;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 615px;
+    height: 475px;
+    aspect-ratio: 1 / 1;
+    gap: 18px;
+    margin-left: -2rem;
 }
 
-/* h1 h2 don't break */
-.index-container h1,
-.index-container h2 {
-    white-space: nowrap;
+.square {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(145deg, rgba(65, 105, 225, 0.3), rgba(0, 0, 139, 0.3));
+    border: 2px solid rgba(65, 105, 225, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.index-container p:last-of-type {
-    word-break: break-word;
+.square::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid rgba(0, 0, 139, 0.5);
+    box-sizing: border-box;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.square:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card {
-    display: flex;
-    margin-bottom: 4rem;
-    align-self: center;
     width: 250px;
     height: 250px;
     background: rgb(0, 0, 0);
@@ -47,10 +70,18 @@
     border: 1px solid rgba(0, 0, 255, .2);
     transition: all .2s;
     box-shadow: 12px 12px 2px 1px rgba(48, 74, 153, 0.8);
+    margin-top: 2rem;
 }
 
 .card:hover {
     box-shadow: -12px 12px 2px -1px rgba(48, 74, 153, 0.8);
+}
+
+.card-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #selfie {
@@ -59,84 +90,61 @@
     border-radius: 5px;
 }
 
-/* Responsive */
-
-@media (max-width: 1200px) {
-
-    .card,
-    #selfie {
-        width: 225px;
-        height: 225px;
-    }
-
+@media (max-width: 1440px) {
     .index-container {
-        max-width: 50%;
-        gap: 4rem;
-        margin-top: 0;
+        justify-content: center;
+        max-width: 1200px;
     }
 
-    .text-container {
-        width: 100%;
-        margin-right: auto;
+    .squares-container {
+        max-width: 400px;
+        height: 325px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+    .squares-container {
+        display: none;
+    }
 
     .index-container {
-        max-width: 100%;
-        gap: 4rem;
-        margin-top: auto;
-    }
-
-    .card {
-        margin-bottom: 0;
-    }
-
-    h1 {
-        font-size: 36px !important;
-    }
-
-    h2 {
-        font-size: 28px !important;
+        justify-content: space-between;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 768px) {
-    .index-container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-around;
-        width: 100%;
-    }
-
-    .card {
-        margin-bottom: 0;
-    }
 
     .text-container {
-        width: 70%;
+        width: 80%;
+        margin-bottom: 2rem;
     }
 
-    h1 {
-        font-size: 34px !important;
+    .text-container h1 {
+        font-size: 34px;
     }
 
-    h2 {
-        font-size: 26px !important;
+    .text-container h2 {
+        font-size: 26px;
     }
 }
 
 @media (max-width: 576px) {
     .text-container {
-        width: 85%;
+        width: 100%;
     }
 
-    h1 {
-        font-size: 34px !important;
+    .text-container h1 {
+        font-size: 30px;
     }
 
-    h2 {
-        font-size: 22px !important;
+    .text-containerh2 {
+        font-size: 22px;
+    }
+
+    .card,
+    #selfie {
+        width: 200px;
+        height: 200px;
     }
 }

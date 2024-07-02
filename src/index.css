@@ -59,6 +59,10 @@ section:focus {
     background-color: #101f36;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .minimal-margin {
     margin: 6px 0px;
 }
