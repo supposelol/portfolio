@@ -9,6 +9,7 @@ import Contact from "./contact/Contact";
 import About from "./about/About";
 import Start from "./start/Start";
 import useOnScreen from "./components/intersectionObserver";
+import FixedLogo from "./Header/FixedLogo";
 
 const Section = ({ id, children, className }) => {
     // Trigger the observer when 25% of the Section is visible and 1.5s delay before setting the visibility state to true
@@ -31,6 +32,7 @@ const Home = () => {
 
     return (
         <>
+            <FixedLogo />
             <Navigation currentSection={currentSection} goToSection={goToSection} />
             <div className="section-container">
                 <Section id="section1" className="start-section">

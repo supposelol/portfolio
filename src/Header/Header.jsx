@@ -84,9 +84,6 @@ const Header = ({ goToSection }) => {
 
     return (
         <header>
-            <div id="logo-container">
-                <img src={logo} alt="Logo" id="logo" />
-            </div>
             <div className="nav-links">
                 <div className="nav-item" onClick={() => handleClick('section2')}>
                     <p className="darkpink">1.</p><p className="marginsides eiderwhite nav-text">About</p>
