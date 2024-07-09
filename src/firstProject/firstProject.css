@@ -42,6 +42,7 @@
 .project-title-container {
     display: grid;
     grid-area: 1 / 2 / 2 / 12;
+    margin-bottom: 16px;
 }
 
 

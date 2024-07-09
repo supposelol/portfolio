@@ -105,13 +105,22 @@
         justify-content: space-between;
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 768px) {
+    .index-container {
+        margin: 2rem;
+    }
+
+    .text-container p:last-of-type {
+        width: 100%;
+    }
 
     .text-container {
-        width: 80%;
+        width: 100%;
         margin-bottom: 2rem;
+        margin-left: 3rem;
     }
 
     .text-container h1 {
@@ -126,19 +135,37 @@
 @media (max-width: 576px) {
     .text-container {
         width: 100%;
+        margin-left: 1.75rem;
+    }
+
+    .text-container p:last-of-type {
+        width: 95%;
     }
 
     .text-container h1 {
         font-size: 30px;
     }
 
-    .text-containerh2 {
-        font-size: 22px;
+    .text-container h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
     }
 
     .card,
     #selfie {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .index-container {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .text-container h2 {
+        font-size: 20px;
     }
 }
