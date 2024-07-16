@@ -13,13 +13,16 @@ const Start = () => {
             const container = squaresRef.current;
             if (!container) return;
 
+            // Get container dimensions
             const containerRect = container.getBoundingClientRect();
             const squareSize = 30;
             const gap = 18;
 
+            // Calculate number of columns and rows
             const cols = Math.floor(containerRect.width / (squareSize + gap));
             const rows = Math.floor(containerRect.height / (squareSize + gap));
 
+            // Create square data
             const newSquares = [];
             for (let i = 0; i < rows; i++) {
                 for (let j = 0; j < cols; j++) {
@@ -35,6 +38,7 @@ const Start = () => {
             setSquares(newSquares);
         };
 
+        // Initial creation of squares
         createSquares();
         window.addEventListener('resize', createSquares);
 
@@ -48,9 +52,11 @@ const Start = () => {
             const container = squaresRef.current;
             if (!container) return;
 
+            // Get container dimensions
             const containerRect = container.getBoundingClientRect();
             const squareElements = container.querySelectorAll('.square');
 
+            // Rotate squares based on mouse posi
             squareElements.forEach((square) => {
                 const rect = square.getBoundingClientRect();
                 const centerX = rect.left + rect.width / 2 - containerRect.left;
@@ -61,8 +67,8 @@ const Start = () => {
             });
         };
 
+        // Mouseover event listener and cleanup
         window.addEventListener('mousemove', handleMouseMove);
-
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };
