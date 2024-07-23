@@ -8,7 +8,7 @@ import "./Header.css";
 import "./hamburger.css";
 import GHLink from "../components/links/githubLink";
 import LinkedinLink from "../components/links/linkedinLink";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/resumeSandorSzabo.pdf";
 
 const Header = ({ goToSection }) => {
     const navigate = useNavigate();

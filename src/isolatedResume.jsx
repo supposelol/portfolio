@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import resume from "./assets/resume.pdf";
+import resume from "./assets/resumeSandorSzabo.pdf";
 
 const IsolatedResume = () => {
     const iframeRef = useRef(null);
@@ -363,7 +363,7 @@ const IsolatedResume = () => {
                         downloadButton.addEventListener('click', () => {
                             const link = document.createElement('a');
                             link.href = '${resume}';
-                            link.download = 'resume.pdf';
+                            link.download = 'resumeSandorSzabo.pdf';
                             document.body.appendChild(link);
                             link.click();
                             document.body.removeChild(link);
